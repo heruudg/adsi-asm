@@ -2,10 +2,7 @@ import Link from 'next/link'
 
 export default function Sidemenu({ children }) {
     return (
-        <aside className="fixed mt-16 flex flex-col lg:mt-0 top-0 px-5 left-0 bg-white text-gray-900 h-screen transition-all duration-300 ease-in-out z-50 border-r border-gray-200 
-        w-[290px]
-        -translate-x-full
-        lg:translate-x-0">
+        <aside className="sidebar fixed left-0 top-0 z-9999 flex h-screen w-[290px] flex-col overflow-y-auto overflow-y-hidden border-r border-gray-200 bg-white px-5 transition-all duration-300 dark:border-gray-800 dark:bg-black lg:static lg:translate-x-0 -translate-x-full">
             <div className="py-8 flex justify-start">
                 <a href="/" data-discover="true">
                     <img src="/images/logo/logo.svg" alt="Logo" width="150" height="40" className="dark:hidden" />
